@@ -1,8 +1,6 @@
 #include "stdlib.h"
 #include "stdio.h"
 
-const int lineBreak = '\n';
-
 int main(int argc, char** argv) {
   short int state = 1;
   int input;
