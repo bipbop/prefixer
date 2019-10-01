@@ -1,6 +1,7 @@
 CFLAGS := -static -O3
 CC := gcc
 DESTDIR := .
+DEBDIR = prefixer_1.1-1
 
 ifeq ($(PREFIX),)
     PREFIX := /usr/local
@@ -9,8 +10,14 @@ endif
 build:
 	$(CC) prefixer.c -o prefixer $(CFLAGS)
 
+deb: build
+	mkdir -p $(DEBDIR)/usr/bin/
+	cp -R DEBIAN $(DEBDIR)
+	dpkg-deb --build $(DEBDIR)
+
 install: build
-	cp prefixer $(PREFIX)/bin/
+	mkdir $(DESTDIT)$(PREFIX)/bin/
+	cp prefixer $(DESTDIT)$(PREFIX)/bin/
 
 clean:
 	rm -rf prefixer
