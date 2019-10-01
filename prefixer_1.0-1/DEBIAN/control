@@ -1,0 +1,7 @@
+Package: prefixer
+Version: 1.0-1
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Lucas Fernando Amorim <lf.amorim@bipbop.com.br>
+Description: Add a string to the beginning of each line.
