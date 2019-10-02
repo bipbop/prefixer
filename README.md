@@ -1,4 +1,4 @@
-# prefixer@1.0
+# prefixer@1.1
 
 Add a string to the beginning of every line.
 
