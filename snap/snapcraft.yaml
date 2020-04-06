@@ -6,11 +6,10 @@
   description: |
     A simple package to add a small output at the beginning of each STDOUT line.
 
-  grade: devel # must be 'stable' to release into candidate/stable channels
-  confinement: devmode # use 'strict' once you have the right plugs and slots
+  grade: stable # must be 'stable' to release into candidate/stable channels
+  confinement: strict # use 'strict' once you have the right plugs and slots
 
   parts:
-    my-part:
-      # See 'snapcraft plugins'
+    build:
       plugin: make
   
