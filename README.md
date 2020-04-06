@@ -1,4 +1,5 @@
 # prefixer@1.1
+[![Snap Status](https://build.snapcraft.io/badge/bipbop/prefixer.svg)](https://build.snapcraft.io/user/bipbop/prefixer)
 
 Add a string to the beginning of every line.
 
